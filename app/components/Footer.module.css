@@ -1,0 +1,142 @@
+.footer {
+  padding: 4rem 2rem 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.brand {
+  max-width: 350px;
+}
+
+.brandLogo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.brandIcon {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, #c9980a 0%, #f5cf48 50%, #e8b810 100%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #0a0a0f;
+}
+
+.brandName {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.brandDesc {
+  font-size: 0.9rem;
+  color: #6b6762;
+  line-height: 1.8;
+}
+
+.columnTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid rgba(201, 152, 10, 0.3);
+  display: inline-block;
+}
+
+.columnLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.columnLink {
+  font-size: 0.9rem;
+  color: #a8a4a0;
+  text-decoration: none;
+  transition: all 200ms ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.columnLink:hover {
+  color: #e8b810;
+  padding-right: 0.5rem;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.copyright {
+  font-size: 0.85rem;
+  color: #6b6762;
+}
+
+.socials {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.social {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(201, 152, 10, 0.1);
+  border: 1px solid rgba(201, 152, 10, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e8b810;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 300ms ease;
+}
+
+.social:hover {
+  background: linear-gradient(135deg, #c9980a 0%, #f5cf48 50%, #e8b810 100%);
+  color: #0a0a0f;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .top {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer {
+    padding: 3rem 1rem 1.5rem;
+  }
+}
