@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -34,11 +35,14 @@ export default function Navbar({ dict, lang }) {
       <div className={styles.navContainer}>
         {/* Logo */}
         <Link href={`/${lang}`} className={styles.logo}>
-          <div className={styles.logoIcon}>T</div>
-          <div className={styles.logoText}>
-            <span className={styles.logoName}>Tamara</span>
-            <span className={styles.logoSub}>Limousine</span>
-          </div>
+          <Image 
+            src="/tamara-logo.png" 
+            alt="Tamara Limousine Logo" 
+            width={150} 
+            height={50} 
+            style={{ objectFit: 'contain', maxHeight: '50px', width: 'auto' }}
+            priority
+          />
         </Link>
 
         {/* Desktop Links */}

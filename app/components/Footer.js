@@ -1,4 +1,5 @@
 import styles from "./Footer.module.css";
+import Image from "next/image";
 
 export default function Footer({ dict }) {
   const quickLinks = [
@@ -14,9 +15,14 @@ export default function Footer({ dict }) {
         <div className={styles.top}>
           {/* Brand */}
           <div className={styles.brand}>
-            <div className={styles.brandLogo}>
-              <div className={styles.brandIcon}>T</div>
-              <span className={styles.brandName}>Tamara Limousine</span>
+            <div className={styles.brandLogo} style={{ padding: 0, background: 'none' }}>
+              <Image 
+                src="/tamara-logo.png" 
+                alt="Tamara Limousine Logo" 
+                width={150} 
+                height={50} 
+                style={{ objectFit: 'contain', maxHeight: '50px', width: 'auto' }}
+              />
             </div>
             <p className={styles.brandDesc}>
               {dict.brand_desc}
