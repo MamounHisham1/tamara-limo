@@ -1,110 +1,69 @@
-import Image from "next/image";
 import styles from "./Services.module.css";
+import Image from "next/image";
 
-const services = [
-  {
-    title: "ليموزين مطار القاهرة الدولي",
-    desc: "خدمة استقبال وتوصيل من وإلى مطار القاهرة الدولي بسيارات حديثة موديل 2024",
-    image: "/cairo-airport.png",
-    tag: "مطار القاهرة",
-    discount: "خصم 30%",
-  },
-  {
-    title: "ليموزين مطار برج العرب",
-    desc: "خدمة استقبال وتوصيل مطار برج العرب الإسكندرية بسيارات حديثة وسائقين محترفين",
-    image: "/alexandria.png",
-    tag: "الإسكندرية",
-    discount: "خصم 30%",
-  },
-  {
-    title: "ليموزين الغردقة والجونة",
-    desc: "خدمة استقبال وتوصيل الغردقة والجونة بأحدث السيارات وبأقل تكلفة",
-    image: "/hurghada.png",
-    tag: "الغردقة",
-    discount: "خصم 30%",
-  },
-  {
-    title: "ليموزين شرم الشيخ",
-    desc: "خدمة استقبال وتوصيل شرم الشيخ ورأس شيطان بسيارات حديثة موديل 2024",
-    image: "/sharm-elsheikh.png",
-    tag: "شرم الشيخ",
-    discount: "خصم 30%",
-  },
-  {
-    title: "توصيل القاهرة - الإسكندرية",
-    desc: "خدمة التوصيل بين القاهرة والإسكندرية والعكس بأقل تكلفة وأحدث السيارات",
-    image: "/car-interior.png",
-    tag: "بين المحافظات",
-  },
-  {
-    title: "ليموزين خدمة الفنادق",
-    desc: "خدمة ليموزين من وإلى جميع فنادق مصر — التجمع، أكتوبر، الشيخ زايد، العين السخنة",
-    image: "/hero.png",
-    tag: "فنادق مصر",
-  },
-];
+export default function Services({ dict }) {
+  const images = [
+    "/cairo-airport.png",
+    "/alexandria.png",
+    "/hurghada.png",
+    "/sharm-elsheikh.png",
+    "/hero.png",
+    "/car-interior.png"
+  ];
 
-export default function Services() {
   return (
     <section id="services" className={styles.services}>
-      <div className={styles.servicesBg}></div>
+      <div className={styles.servicesBg} />
+      
       <div className={styles.container}>
-        {/* Header */}
         <div className={styles.header}>
-          <div className="section-badge">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-            </svg>
-            خدماتنا
+          <div className={styles.heroBadge} style={{ marginBottom: "1rem" }}>
+            <span className={styles.badgeText}>{dict.badge}</span>
           </div>
-          <h2 className="section-title">
-            أقوى الخدمات و<span>أفضل العروض</span>
+          <h2 className={styles.heroTitle} style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>
+            {dict.title_1} <span>{dict.title_2}</span>
           </h2>
-          <p className="section-subtitle" style={{ margin: "0 auto" }}>
-            نقدم أفضل ما لدينا في جميع محافظات مصر — سيارات حديثة موديل 2024
-            مع سائقين محترفين
+          <p className={styles.heroDesc}>
+            {dict.subtitle}
           </p>
         </div>
 
-        {/* Grid */}
         <div className={styles.grid}>
-          {services.map((service, index) => (
-            <a
-              key={index}
-              href="https://api.whatsapp.com/send/?phone=201274575752"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.card}
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
+          {dict.items.map((service, index) => (
+            <div key={index} className={styles.card}>
               <div className={styles.cardImage}>
+                {service.discount && (
+                  <div className={styles.cardDiscount}>{service.discount}</div>
+                )}
                 <Image
-                  src={service.image}
+                  src={images[index % images.length]}
                   alt={service.title}
                   fill
                   style={{ objectFit: "cover" }}
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
-                <div className={styles.cardImageOverlay}></div>
-                {service.discount && (
-                  <span className={styles.cardDiscount}>{service.discount}</span>
-                )}
+                <div className={styles.cardImageOverlay} />
               </div>
+              
               <div className={styles.cardBody}>
                 <h3 className={styles.cardTitle}>{service.title}</h3>
                 <p className={styles.cardDesc}>{service.desc}</p>
+                
                 <div className={styles.cardMeta}>
                   <span className={styles.cardTag}>
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-                      <circle cx="12" cy="10" r="3"/>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                     </svg>
                     {service.tag}
                   </span>
-                  <span className={styles.cardArrow}>←</span>
+                  
+                  <div className={styles.cardArrow}>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </div>
                 </div>
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>

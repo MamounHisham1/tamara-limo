@@ -1,0 +1,142 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "book_whatsapp": "Book via WhatsApp"
+  },
+  "hero": {
+    "badge": "Available 24/7",
+    "title_1": "Premium Limousine",
+    "title_2": "Across all Egyptian Governorates",
+    "desc": "We constantly strive for customer satisfaction with modern vehicles and professional drivers. Airport and inter-city transfers at the best prices.",
+    "cta_whatsapp": "Book via WhatsApp",
+    "cta_call": "Call Now",
+    "stats": {
+      "exp_years": "+20",
+      "exp_label": "Years Experience",
+      "availability": "24/7",
+      "avail_label": "Continuous Service",
+      "clients": "+50K",
+      "client_label": "Happy Clients",
+      "gov": "+15",
+      "gov_label": "Governorates"
+    }
+  },
+  "services": {
+    "badge": "Our Services",
+    "title_1": "Premium Services & ",
+    "title_2": "Best Offers",
+    "subtitle": "We offer our best across all Egyptian governorates — 2024 model cars with professional drivers",
+    "items": [
+      {
+        "title": "Cairo International Airport Limousine",
+        "desc": "Transfer service to and from Cairo International Airport with modern 2024 cars",
+        "tag": "Cairo Airport",
+        "discount": "30% Off"
+      },
+      {
+        "title": "Borg El Arab Airport Limousine",
+        "desc": "Transfer service to and from Borg El Arab Airport Alexandria with professional drivers",
+        "tag": "Alexandria",
+        "discount": "30% Off"
+      },
+      {
+        "title": "Hurghada & El Gouna Limousine",
+        "desc": "Transfer service for Hurghada and El Gouna with the latest cars at the lowest cost",
+        "tag": "Hurghada",
+        "discount": "30% Off"
+      },
+      {
+        "title": "Sharm El Sheikh Limousine",
+        "desc": "Transfer service for Sharm El Sheikh and Ras Shitan with modern 2024 cars",
+        "tag": "Sharm El Sheikh",
+        "discount": "30% Off"
+      },
+      {
+        "title": "Cairo - Alexandria Transfer",
+        "desc": "Transfer service between Cairo and Alexandria at the lowest cost with modern cars",
+        "tag": "Inter-city",
+        "discount": ""
+      },
+      {
+        "title": "Hotel Limousine Service",
+        "desc": "Limousine service to and from all Egyptian hotels — Tagamoa, October, Sheikh Zayed, Ain Sokhna",
+        "tag": "Egypt Hotels",
+        "discount": ""
+      }
+    ]
+  },
+  "about": {
+    "badge": "About Us",
+    "title_1": "Tamara Limousine",
+    "title_2": "Company",
+    "subtitle": "We are a leading limousine service company across all Egyptian governorates since 2005. We constantly develop our services to provide the best experience for our customers. We welcome cooperation with tourism companies, hotels, and state institutions.",
+    "exp_number": "+20",
+    "exp_label": "Years Experience",
+    "features": [
+      {
+        "title": "24/7 Service",
+        "desc": "We work around the clock, 7 days a week to serve you anytime"
+      },
+      {
+        "title": "Modern Vehicles",
+        "desc": "Latest 2024 models fully equipped for your comfort"
+      },
+      {
+        "title": "Comprehensive Coverage",
+        "desc": "Limousine service in all Egyptian governorates and airports"
+      },
+      {
+        "title": "Competitive Prices",
+        "desc": "Best prices with discounts up to 30% on all trips"
+      }
+    ],
+    "cta": "Contact Us Now"
+  },
+  "contact": {
+    "badge": "Contact Us",
+    "title_1": "We are always",
+    "title_2": "at your service",
+    "subtitle": "Do not hesitate to contact us on the following numbers or visit us at the nearest branch. We wish you a happy trip!",
+    "cards": [
+      {
+        "title": "Call Us",
+        "info": "01274575752",
+        "sub": "Main Office"
+      },
+      {
+        "title": "WhatsApp",
+        "info": "01274575752",
+        "sub": "Instant Reply 24/7"
+      },
+      {
+        "title": "Address",
+        "info": "Seasons Park Mall",
+        "sub": "New Cairo, Cairo"
+      }
+    ],
+    "promo_title": "30% Discount on All Trips",
+    "promo_desc": "Book now and enjoy an exclusive discount on all limousine services in Egypt",
+    "cta_whatsapp": "Book via WhatsApp",
+    "cta_call": "Call Now"
+  },
+  "footer": {
+    "brand_desc": "A leading limousine service company across all Egyptian governorates since 2005. We constantly develop our services to provide the best experience for our customers.",
+    "quick_links_title": "Quick Links",
+    "services_title": "Our Services",
+    "services_links": [
+      "Cairo Airport Limousine",
+      "Borg El Arab Limousine",
+      "Sharm El Sheikh Limousine",
+      "Hurghada Limousine",
+      "North Coast Limousine"
+    ],
+    "copyright": "© 2026 Tamara Limousine Services. All rights reserved."
+  },
+  "whatsapp": {
+    "label": "Chat with us",
+    "aria": "Contact via WhatsApp"
+  }
+}
