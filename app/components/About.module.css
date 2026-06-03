@@ -30,6 +30,7 @@
 
 .imageWrapper {
   position: relative;
+  height: 500px;
   border-radius: 1.5rem;
   overflow: hidden;
   border: 1px solid rgba(201, 152, 10, 0.2);
@@ -125,7 +126,7 @@
     padding: 4rem 1rem;
   }
 
-  .imageWrapper img {
+  .imageWrapper {
     height: 350px;
   }
 
