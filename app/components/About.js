@@ -21,7 +21,7 @@ export default function About({ dict }) {
         <div className={styles.imageSection}>
           <div className={styles.imageWrapper}>
             <Image
-              src="/car-interior.png"
+              src="/luxury-limo-interior.png"
               alt="Tamara Limousine Luxury Interior"
               fill
             />
